@@ -1,45 +1,168 @@
 .section {
-  height: 100vh;
-  position:relative;
+  min-height: 100vh;
+  position: relative;
 }
-.services-icon :before{
-      position: absolute;
-    top: 74px;
-    height: 80px;
-    width: 1px;
-    content: '';
-    background-color: #e8eaed;}
-.services-icon{
-  position:relative;
-  top:0;
+.centerAll {
+  display: grid;
+  place-items: center;
 }
-.services-icon :after{
+.about-card {
   position: absolute;
-    content: ' ';
-    bottom: -50px;
-    left: 48%;
-    margin-left: -5px;
-    height: 12px;
-    width: 12px;
-    z-index: 1;
-    border-radius: 50px;
-    background-color: #e8eaed;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    transition: all .3s ease;
+  z-index: 1;
+  top: 40%;
+  width: 200px;
+  color: white;
+  right: 0px;
+}
+.howWork-number {
+  color: white;
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: -20px;
+  left: 40%;
+}
+.howWork-step {
+  padding: 10px;
+  border-radius: 50%;
+  border: solid #ccc;
+  height: 185px;
+  width: 185px;
+  position: relative;
+}
+.services-icon :before {
+  position: absolute;
+  top: 74px;
+  height: 80px;
+  width: 1px;
+  content: '';
+  background-color: #e8eaed;
+}
+.services-icon {
+  position: relative;
+  top: 0;
+}
+.services-icon :after {
+  position: absolute;
+  content: ' ';
+  bottom: -50px;
+  left: 48%;
+  margin-left: -5px;
+  height: 12px;
+  width: 12px;
+  z-index: 1;
+  border-radius: 50px;
+  background-color: #e8eaed;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.services-card-text{
-   overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-line-clamp: 6; /* number of lines to show */
-   -webkit-box-orient: vertical;
+.services-card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
-.navbar {
-  background-color: rgba(255, 255, 255, 0.8) !important;
-  color: red;
+
+.slide {
+  color: #272727;
+}
+.slide-banner {
+  position: relative;
+  top: -70px;
+}
+
+.moreServices-background {
+  background: url(http://anomica.themetechmount.net/wp-content/uploads/2019/11/row-bg-one.jpg?id=1253)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.moreServices-backdrop {
+  height: 100%;
+  widht: 100%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #2623237a;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+.news-background {
+  background: #1a5691;
+}
+
+.news-backdrop {
+  height: 209px;
+  color: white;
+  background: rgb(37, 41, 61);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 41, 61, 0.5186449579831933) 0%,
+    rgba(37, 41, 61, 1) 100%
+  );
+  backdrop-filter: blur(7px);
+}
+
+.ourTeam-social {
+  position: relative;
+  float: left;
+  display: grid;
+  overflow: hidden;
+}
+.ourTeam-title {
+  width: 277px;
+  height: 80px;
+  position: relative;
+  top: -20px;
+  background: white;
+  display: grid;
+  place-items: center;
+}
+.whySoluprime-background {
+  height: 80vh;
+  width: 90vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: url(http://anomica.themetechmount.net/wp-content/uploads/2019/11/col-bg-one.jpg?id=1252)
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.whySoluprime-body {
+  height: 600px;
+  color: white;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 720px;
+}
+.whySoluprime-body-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.borderBottom {
+  border: solid #1a5691;
+  border-width: 0 0 5px 0;
+  border-radius: 10%;
+}
+.borderBottom-white {
+  border: solid white;
+  border-width: 0 0 5px 0;
+  border-radius: 10%;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
 }
 .tabs {
   margin: 0;

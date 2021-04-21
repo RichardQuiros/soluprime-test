@@ -1,43 +1,15 @@
 <template>
-  <v-content class="section">
+  <v-container fluid="true" class="section">
     <v-row>
       <v-col>
-        <div
-          style="
-            height: 90vh;
-            width: 90vw;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            background: url(http://anomica.themetechmount.net/wp-content/uploads/2019/11/col-bg-one.jpg?id=1252)
-              no-repeat center center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-          "
-        ></div>
+        <div class="whySoluprime-background"></div>
       </v-col>
-      <v-col
-        class="indigo pa-10"
-        style="
-          height: 700px;
-          color: white;
-          position: absolute;
-          top: 10%;
-          right: 0;
-          width: 720px;
-        "
-      >
+      <v-col class="indigo pa-10 whySoluprime-body">
         <p>why Soluprime</p>
         <h1>
           We deal with the asspects of
           <span
-            style="
-              border: solid white;
-              border-radius: 10%;
-              border-width: 0 0 4px 0;
-              padding-bottom: 10px;
-            "
+	   class="borderBottom-white"
             >prof</span
           >essional it service
         </h1>
@@ -46,7 +18,7 @@
           manage business processes of all categories.
         </p>
         <div v-for="(item, i) in dataWhy" :key="i">
-          <div style="display: grid; grid-template-columns: auto 1fr">
+          <div class="whySoluprime-body-content">
             <div style="margin: auto">
               <v-icon
                 color="white"
@@ -67,7 +39,7 @@
         </div>
       </v-col>
     </v-row>
-  </v-content>
+  </v-container>
 </template>
 <script>
 export default {

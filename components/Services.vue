@@ -6,11 +6,7 @@
       <span class="font-italic indigo--text" style="font-family: fangsong"
         >Information
         <span
-          style="
-            border: solid #3f51b5;
-            border-radius: 10%;
-            border-width: 0 0 4px 0;
-          "
+          class="borderBottom"
           >&</span
         >
         Technologies</span
@@ -28,7 +24,6 @@
             >
               <v-row
                 class="fill-height"
-                style=""
                 aling="center"
                 justify="center"
               >
