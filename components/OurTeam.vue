@@ -18,7 +18,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col align="center" v-for="(item, i) in dataTeam" :key="i">
+      <v-col align="center" class="ourTeam-card" v-for="(item, i) in dataTeam" :key="i">
         <div>
           <div
             :style="`

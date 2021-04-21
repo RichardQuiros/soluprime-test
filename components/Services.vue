@@ -13,12 +13,11 @@
       >
     </h1>
     <v-row class="mt-16 mb-10">
-      <v-col v-for="(item, i) in dataServices" :key="i">
-        <div style="display:gird,place-items:center; width:263px;">
-          <div style="position: relative">
+      <v-col class="services-card-col" v-for="(item, i) in dataServices" :key="i">
+        <div class="services-card">
+          <div class="services-card-icon" style="position: relative">
             <v-card
               class="mx-auto mb-12 services-icon"
-              elevation="4"
               height="73"
               width="73"
             >
@@ -34,7 +33,7 @@
               >{{ item.icon }}</v-icon
             >
           </div>
-          <v-card elevation="4" class="text-center" height="250" width="263">
+          <v-card elevation="4" class="text-center services-card-body" height="250" width="263">
             <v-card-title
               style="height: 64px; display: block"
               class="text-center"
@@ -44,8 +43,8 @@
             <v-card-text style="height: 130px" class="services-card-text">
               {{ item.text }}
             </v-card-text>
-            <v-card-actions style="display: block">
-              <v-btn icon>
+            <v-card-actions  style="display: block">
+              <v-btn class="services-card-actions" icon>
                 Read More
                 <v-icon>mdi-chevron-double-right </v-icon>
               </v-btn>
@@ -63,21 +62,21 @@ export default {
     return {
       dataServices: [
         {
-          icon: 'mdi-heart',
+          icon: 'mdi-database-clock ',
           title: 'Lorem ipsum',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lectus, vehicula nec vehicula pellentesque, egestas id augue. Nulla et lobortis odio, vel fermentum sapien.',
           href: '#',
         },
         {
-          icon: 'mdi-heart',
+          icon: 'mdi-code-less-than ',
           title: 'Lorem ipsum',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lectus, vehicula nec vehicula pellentesque, egestas id augue. Nulla et lobortis odio, vel fermentum sapien.',
           href: '#',
         },
         {
-          icon: 'mdi-heart',
+          icon: 'mdi-file-cog ',
           title: 'Lorem ipsum',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lectus, vehicula nec vehicula pellentesque, egestas id augue. Nulla et lobortis odio, vel fermentum sapien.',

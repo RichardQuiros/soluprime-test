@@ -4,7 +4,7 @@
     <p>How it works</p>
     <h1 class="mb-12">Check Out O<span class="borderBottom">ur W</span>ork Process</h1>
     <v-row>
-      <v-col>
+      <v-col class="howWork-col">
         <div
 	class="howWork-step"
         >
@@ -37,7 +37,7 @@
 
         <v-icon x-large>mdi-chevron-triple-right </v-icon>
 	</v-col>
-      <v-col>
+      <v-col class="howWork-col">
         <div
 	class="howWork-step"
 
@@ -70,7 +70,7 @@
 	<v-col style="margin:auto;">
         <v-icon x-large>mdi-chevron-triple-right </v-icon>
 	</v-col>
-<v-col>
+<v-col class="howWork-col">
         <div
 	class="howWork-step"
         >

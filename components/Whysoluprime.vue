@@ -47,21 +47,21 @@ export default {
     return {
       dataWhy: [
         {
-          icon: 'mdi-heart',
+          icon: 'mdi-wan ',
           title: 'Lorem ipsum',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lectus, vehicula nec vehicula pellentesque, egestas id augue. Nulla et lobortis odio, vel fermentum sapien.',
           href: '#',
         },
         {
-          icon: 'mdi-heart',
+          icon: 'mdi-source-branch-plus ',
           title: 'Lorem ipsum',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lectus, vehicula nec vehicula pellentesque, egestas id augue. Nulla et lobortis odio, vel fermentum sapien.',
           href: '#',
         },
         {
-          icon: 'mdi-heart',
+          icon: 'mdi-rocket-launch ',
           title: 'Lorem ipsum',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lectus, vehicula nec vehicula pellentesque, egestas id augue. Nulla et lobortis odio, vel fermentum sapien.',

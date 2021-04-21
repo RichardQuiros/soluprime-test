@@ -31,6 +31,34 @@
   height: 185px;
   width: 185px;
   position: relative;
+  transition:background .2s ease-in-out;
+}
+
+.howWork-col:hover .howWork-step{
+  background:#252525;
+}
+
+.services-card {
+  display: gird;
+  place-items: center;
+  width: 263px;
+}
+
+.services-card-body{
+  transition:background .3s ease-in-out;
+}
+.services-card-col :hover .services-card-body {
+  background-color: #424242;
+  color:white;
+}
+.services-card-col :hover .services-card-text {
+  color:white;
+}
+.services-card-col :hover .services-card-actions {
+  color:white;
+}
+.services-card-col :hover .services-icon {
+  transform: scale(1.1);
 }
 .services-icon :before {
   position: absolute;
@@ -43,6 +71,7 @@
 .services-icon {
   position: relative;
   top: 0;
+  transition: transform 0.5s ease-in-out;
 }
 .services-icon :after {
   position: absolute;
@@ -111,11 +140,30 @@
   backdrop-filter: blur(7px);
 }
 
+.ourTeam-card{
+  overflow:hidden;
+}
+.ourTeam-card :hover .ourTeam-social{
+  transform:translateY(0px);
+  filter:opacity(1);
+  
+}
+
+
+.ourTeam-card :hover .ourTeam-title{
+  border:solid #252525;
+  border-width:0 0 10px 0;
+}
+
+
 .ourTeam-social {
   position: relative;
   float: left;
   display: grid;
   overflow: hidden;
+  transform: translateY(-10px);
+  filter:opacity(0);
+  transition:transform .5s ease-in-out,filter .9s ease-in-out;
 }
 .ourTeam-title {
   width: 277px;
@@ -125,6 +173,7 @@
   background: white;
   display: grid;
   place-items: center;
+  transition:border .3s ease-in-out;
 }
 .whySoluprime-background {
   height: 80vh;
