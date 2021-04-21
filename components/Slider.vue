@@ -12,7 +12,7 @@
           :color="colors[i]"
           height="100%"
           class="slide-background"
-          :style="`background: url(${slide.img})
+          :style="`background: url(${getImage(slide.img)})
     no-repeat center center fixed;   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -63,7 +63,7 @@
 export default {
   data() {
     return {
-      colors: [
+    colors: [
         'indigo',
         'warning',
         'pink darken-2',
@@ -75,15 +75,13 @@ export default {
           title: 'First',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integerlorem lectus, vehicula nec vehicula pellentesque, egestas augue. Nulla et lobortis odio, vel fermentum sapien.',
-          img:
-            'http://anomica.themetechmount.net/wp-content/uploads/2019/12/home-mainslider-bg001.jpg',
+          img: 'img1',
         },
         {
           title: 'Second',
           text:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integerlorem lectus, vehicula nec vehicula pellentesque, egestas augue. Nulla et lobortis odio, vel fermentum sapien.',
-          img:
-            'http://anomica.themetechmount.net/wp-content/uploads/2019/12/home-mainslider-bg002.jpg',
+          img: 'img2',
         },
       ],
       bannerItems: [
@@ -110,6 +108,11 @@ export default {
         },
       ],
     }
+  },
+  methods: {
+    getImage(item) {
+      return require(`~/assets/img/${item}.jpg`)
+    },
   },
 }
 </script>

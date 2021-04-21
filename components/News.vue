@@ -24,7 +24,7 @@
       <v-col v-for="(item, i) in items" :key="i" cols="12" md="4">
         <v-hover v-slot="{ hover }">
           <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-            <v-img :src="item.img" height="400px">
+            <v-img :src="require('~/assets/img/'+item.img+'.jpg')" height="400px">
               <v-card-title class="title white--text">
                 <v-row class="fill-height flex-column" justify="space-between">
                   <p class="mt-4 subheading text-left">
@@ -79,7 +79,7 @@ export default {
         subtext:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lectus, vehicula nec vehicula pellentesque, egestas id augue. Nulla et lobortis odio, vel fermentum sapien.',
         img:
-          'http://anomica.themetechmount.net/wp-content/uploads/2019/08/project-three.jpg',
+          'img8',
       },
       {
         title: 'Lorem Ipsum',
@@ -87,7 +87,7 @@ export default {
         subtext:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lectus, vehicula nec vehicula pellentesque, egestas id augue. Nulla et lobortis odio, vel fermentum sapien.',
         img:
-          'http://anomica.themetechmount.net/wp-content/uploads/2019/10/project-two-600x750.jpg',
+          'img9',
       },
       {
         title: 'Lorem Ipsum',
@@ -95,7 +95,7 @@ export default {
         subtext:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lectus, vehicula nec vehicula pellentesque, egestas id augue. Nulla et lobortis odio, vel fermentum sapien.',
         img:
-          'http://anomica.themetechmount.net/wp-content/uploads/2019/08/project-four-600x750.jpg',
+          'img10',
       },
     ],
     transparent: 'rgba(255, 255, 255, 0)',

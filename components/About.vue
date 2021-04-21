@@ -54,7 +54,7 @@
           <v-img
             max-height="614"
             max-width="569"
-            src="http://anomica.themetechmount.net/wp-content/uploads/2019/11/single-col-one.png"
+            :src="require('~/assets/img/img3.png')"
           >
           </v-img>
           <div

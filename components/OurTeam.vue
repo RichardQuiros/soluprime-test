@@ -1,6 +1,6 @@
 <template>
   <v-container fluid="true" class="section my-12">
-    <v-row >
+    <v-row>
       <v-col>
         <div>
           <p>we Make Connetions</p>
@@ -13,18 +13,23 @@
             The positive distinction within the World Inspiring of Success and
             Connections of People and Organizations.
           </p>
-      <v-btn color="white" outlined>Read More</v-btn>
+          <v-btn color="white" outlined>Read More</v-btn>
         </div>
       </v-col>
     </v-row>
     <v-row>
-      <v-col align="center" class="ourTeam-card" v-for="(item, i) in dataTeam" :key="i">
+      <v-col
+        align="center"
+        class="ourTeam-card"
+        v-for="(item, i) in dataTeam"
+        :key="i"
+      >
         <div>
           <div
             :style="`
               height: 357px;
               width: 386px;
-              background: url(${item.img})
+              background: url(${getImage(item.img)})
                 no-repeat center center;
               -webkit-background-size: cover;
               -moz-background-size: cover;
@@ -33,9 +38,7 @@
 	      position:relative;
             `"
           >
-            <div
-              class="indigo ourTeam-social"
-            >
+            <div class="indigo ourTeam-social">
               <v-btn icon>
                 <v-icon color="white">mdi-facebook </v-icon>
               </v-btn>
@@ -47,9 +50,7 @@
               </v-btn>
             </div>
           </div>
-          <div
-            class="elevation-4 text-center ourTeam-title"
-          >
+          <div class="elevation-4 text-center ourTeam-title">
             <h1 style="font-size: 19px">{{ item.name }}</h1>
             <p>{{ item.title }}</p>
           </div>
@@ -66,23 +67,25 @@ export default {
         {
           name: 'Jennifer Garcia',
           title: 'It service officer',
-          img:
-            'http://anomica.themetechmount.net/wp-content/uploads/2019/10/team-one-480x520.jpg',
+          img: 'img5',
         },
         {
           name: 'Robert Liam',
           title: 'Web designer',
-          img:
-            'http://anomica.themetechmount.net/wp-content/uploads/2019/10/team-two-480x520.jpg',
+          img: 'img6',
         },
         {
           name: 'Jessica Ethan',
           title: 'Project manager',
-          img:
-            'http://anomica.themetechmount.net/wp-content/uploads/2019/08/team-three-480x520.jpg',
+          img: 'img7',
         },
       ],
     }
+  },
+  methods: {
+    getImage(item) {
+      return require(`~/assets/img/${item}.jpg`)
+    },
   },
 }
 </script>

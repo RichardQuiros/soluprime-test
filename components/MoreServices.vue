@@ -1,6 +1,9 @@
 <template>
   <v-content fluid="true"
     class="section moreServices-background"
+    :style="`background: url(${require('~/assets/img/img11.jpg')})
+    no-repeat center center fixed;`"
+ 
   >
     <div
     class="moreServices-backdrop"
