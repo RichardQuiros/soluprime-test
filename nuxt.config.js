@@ -35,7 +35,7 @@ export default {
       },
       {
         hid: 'og:image',
-        content: `${process.env.BASE_URL || ''}/Shoptenado.png`,
+        content: `${process.env.BASE_URL || ''}/banner.jpg`,
       },
 
       { hid: 'twitter:card', content: 'summary_large_image' },
@@ -51,7 +51,7 @@ export default {
       },
       {
         hid: 'twitter:image',
-        content: `${process.env.BASE_URL || ''}/Shoptenado.png`,
+        content: `${process.env.BASE_URL || ''}/banner.jpg`,
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
