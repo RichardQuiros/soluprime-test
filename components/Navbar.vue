@@ -109,7 +109,7 @@
         ></v-app-bar-nav-icon>
       </v-toolbar>
       <!-- MobilMenu -->
-      <v-navigation-drawer class="menu-mobile" v-model="drawer" absolute temporary right>
+      <v-navigation-drawer class="menu-mobile" v-model="drawer" absolute temporary bottom>
         <v-list nav dense>
           <v-subheader>Bienvenidos a Soluprime</v-subheader>
           <v-list-item-group active-class="indigo--text text--accent-4">

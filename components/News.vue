@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <v-container class="section">
     <div class="news-background">
       <v-row
         align="center"
@@ -65,7 +65,7 @@
         </v-hover>
       </v-col>
     </v-row>
-  </div>
+  </v-container>
 </template>
 <script>
 export default {

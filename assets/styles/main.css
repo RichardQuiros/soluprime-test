@@ -6,7 +6,7 @@ body {
 }
 .menu-mobile{
   height:100vh !important;
-  min-width: 60vw;
+  position:fixed;
 }
 /*tools css*/
 .section {
