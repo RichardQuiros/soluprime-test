@@ -2,6 +2,7 @@
   <v-app>
     <Navbar />
     <Nuxt />
+    <News/>
     <Footer />
   </v-app>
 </template>

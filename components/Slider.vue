@@ -20,8 +20,8 @@
         >
           <v-row class="fill-height slide" align="center" justify="center">
             <div style="width: 300px">
-              <h1>{{ slide.title }}</h1>
-              <p>{{ slide.text }}</p>
+              <h1 class="slider-title">{{ slide.title }}</h1>
+              <p class="slider-text">{{ slide.text }}</p>
               <v-btn color="indigo">Read more</v-btn>
               <v-btn color="second">Get service</v-btn>
             </div>
@@ -32,7 +32,7 @@
 
     <v-container class="slide-banner">
       <v-row class="secondary mt-0 px-4">
-        <v-col v-for="(item, i) in bannerItems" :key="i" class="pa-0">
+        <v-col cols="12" sm="4" v-for="(item, i) in bannerItems" :key="i" class="pa-0">
           <div
             style="
               display: grid;
@@ -49,7 +49,7 @@
               <v-icon dark class="pa-4"> {{ item.icon }} </v-icon>
             </div>
             <div>
-              <h1>{{ item.title }}</h1>
+              <h1 class="slider-banner-title">{{ item.title }}</h1>
               <p>{{ item.text }}</p>
             </div>
           </div>

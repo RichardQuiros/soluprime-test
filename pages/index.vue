@@ -1,12 +1,14 @@
 <template>
   <v-app>
-    <Slider />
-    <About />
+    <div id="header">
+      <Slider />
+    </div>
+    <About id="nosotros" />
     <Services />
     <Whysoluprime />
     <OurTeam />
-    <MoreServices />
+    <MoreServices id="soluciones" />
     <HowWorks />
-    <News />
   </v-app>
 </template>
+

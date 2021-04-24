@@ -1,7 +1,7 @@
 <template>
-  <v-container fluid="true" class="section">
+  <v-container :fluid="true" class="section">
     <v-row>
-      <v-col>
+      <v-col class="whySoluprime-background-col" cols="12" md="6">
         <div class="whySoluprime-background" :style="`background:url(${require('~/assets/img/img4.jpg')})`"></div>
       </v-col>
       <v-col class="indigo pa-10 whySoluprime-body">

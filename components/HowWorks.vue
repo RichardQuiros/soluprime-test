@@ -5,12 +5,12 @@
       <h1 class="mb-12">
         Check Out O<span class="borderBottom">ur W</span>ork Process
       </h1>
-      <v-row>
-        <v-col class="howWork-col">
+      <v-row class="howWork-steps">
+        <v-col cols="12" sm="3" class="howWork-col">
           <div class="howWork-step">
             <div
               :style="`
-              border-radius: 50%;
+              border-radius: 49%;
               background: url(${require('~/assets/img/img12.jpg')})
                 no-repeat center center fixed;
               -webkit-background-size: cover;
@@ -28,10 +28,10 @@
             <p class="text-center">Lorem ipsum</p>
           </div>
         </v-col>
-        <v-col style="margin: auto">
+        <v-col cols="12" sm="1" class="howWork-icons">
           <v-icon x-large>mdi-chevron-triple-right </v-icon>
         </v-col>
-        <v-col class="howWork-col">
+        <v-col cols="12" sm="3" class="howWork-col">
           <div class="howWork-step">
             <div
               :style="`
@@ -54,7 +54,7 @@
           </div>
         </v-col>
 
-        <v-col style="margin: auto">
+        <v-col cols="12" sm="1" class="howWork-icons">
           <v-icon x-large>mdi-chevron-triple-right </v-icon>
         </v-col>
         <v-col class="howWork-col">

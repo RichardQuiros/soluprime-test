@@ -1,7 +1,7 @@
 <template>
   <v-container class="section">
     <v-row>
-      <v-col>
+      <v-col  cols="12" lg="5">
         <p>Aabout us</p>
         <h1 class="display-1 font-weight-bold">
           We are here to IT Solution with
@@ -50,8 +50,8 @@
         </p>
       </v-col>
       <v-col>
-        <div style="position: relative">
-          <v-img
+        <div class="abot-container-img centerAll">
+          <v-img class="about-img"
             max-height="614"
             max-width="569"
             :src="require('~/assets/img/img3.png')"

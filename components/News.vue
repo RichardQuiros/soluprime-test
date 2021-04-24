@@ -1,21 +1,21 @@
 <template>
-  <v-content class="section">
+  <div class="section">
     <div class="news-background">
       <v-row
         align="center"
         class="px-10 news-backdrop"
       >
-        <v-col>
+        <v-col cols="12" md="2">
           <p>We make connection</p>
           <h1>Explore Recent</h1>
         </v-col>
-        <v-col>
+        <v-col cols="12" md="8">
           <p>
             A project is a temporary endeavor with a defined beginning and end,
             scope, and assigned resources.
           </p>
         </v-col>
-        <v-col>
+        <v-col class="news-magnify">
           <v-btn icon  outlined color="white">Read More <v-icon>mdi-magnify </v-icon></v-btn>
         </v-col>
       </v-row>
@@ -65,7 +65,7 @@
         </v-hover>
       </v-col>
     </v-row>
-  </v-content>
+  </div>
 </template>
 <script>
 export default {

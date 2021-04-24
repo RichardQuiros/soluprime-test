@@ -1,3 +1,14 @@
+body {
+  width: 100vw;
+}
+.v-overlay__scrim{
+  position:fixed !important;
+}
+.menu-mobile{
+  height:100vh !important;
+  min-width: 60vw;
+}
+/*tools css*/
 .section {
   min-height: 100vh;
   position: relative;
@@ -5,195 +16,6 @@
 .centerAll {
   display: grid;
   place-items: center;
-}
-.about-card {
-  position: absolute;
-  z-index: 1;
-  top: 40%;
-  width: 200px;
-  color: white;
-  right: 0px;
-}
-.howWork-number {
-  color: white;
-  height: 40px;
-  width: 40px;
-  display: grid;
-  place-items: center;
-  position: absolute;
-  bottom: -20px;
-  left: 40%;
-}
-.howWork-step {
-  padding: 10px;
-  border-radius: 50%;
-  border: solid #ccc;
-  height: 185px;
-  width: 185px;
-  position: relative;
-  transition:background .2s ease-in-out;
-}
-
-.howWork-col:hover .howWork-step{
-  background:#252525;
-}
-
-.services-card {
-  display: gird;
-  place-items: center;
-  width: 263px;
-}
-
-.services-card-body{
-  transition:background .3s ease-in-out;
-}
-.services-card-col :hover .services-card-body {
-  background-color: #424242;
-  color:white;
-}
-.services-card-col :hover .services-card-text {
-  color:white;
-}
-.services-card-col :hover .services-card-actions {
-  color:white;
-}
-.services-card-col :hover .services-icon {
-  transform: scale(1.1);
-}
-.services-icon :before {
-  position: absolute;
-  top: 74px;
-  height: 80px;
-  width: 1px;
-  content: '';
-  background-color: #e8eaed;
-}
-.services-icon {
-  position: relative;
-  top: 0;
-  transition: transform 0.5s ease-in-out;
-}
-.services-icon :after {
-  position: absolute;
-  content: ' ';
-  bottom: -50px;
-  left: 48%;
-  margin-left: -5px;
-  height: 12px;
-  width: 12px;
-  z-index: 1;
-  border-radius: 50px;
-  background-color: #e8eaed;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.services-card-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 6; /* number of lines to show */
-  -webkit-box-orient: vertical;
-}
-
-.slide {
-  color: #272727;
-}
-.slide-banner {
-  position: relative;
-  top: -70px;
-}
-
-.moreServices-background {
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.moreServices-backdrop {
-  height: 100%;
-  widht: 100%;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  background: #2623237a;
-  display: grid;
-  place-items: center;
-  color: white;
-}
-.news-background {
-  background: #1a5691;
-}
-
-.news-backdrop {
-  height: 209px;
-  color: white;
-  background: rgb(37, 41, 61);
-  background: linear-gradient(
-    90deg,
-    rgba(37, 41, 61, 0.5186449579831933) 0%,
-    rgba(37, 41, 61, 1) 100%
-  );
-  backdrop-filter: blur(7px);
-}
-
-.ourTeam-card{
-  overflow:hidden;
-}
-.ourTeam-card :hover .ourTeam-social{
-  transform:translateY(0px);
-  filter:opacity(1);
-  
-}
-
-
-.ourTeam-card :hover .ourTeam-title{
-  border:solid #252525;
-  border-width:0 0 10px 0;
-}
-
-
-.ourTeam-social {
-  position: relative;
-  float: left;
-  display: grid;
-  overflow: hidden;
-  transform: translateY(-10px);
-  filter:opacity(0);
-  transition:transform .5s ease-in-out,filter .9s ease-in-out;
-}
-.ourTeam-title {
-  width: 277px;
-  height: 80px;
-  position: relative;
-  top: -20px;
-  background: white;
-  display: grid;
-  place-items: center;
-  transition:border .3s ease-in-out;
-}
-.whySoluprime-background {
-  height: 80vh;
-  width: 90vw;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.whySoluprime-body {
-  height: 600px;
-  color: white;
-  position: absolute;
-  top: 10%;
-  right: 0;
-  width: 720px;
-}
-.whySoluprime-body-content {
-  display: grid;
-  grid-template-columns: auto 1fr;
 }
 .borderBottom {
   border: solid #1a5691;
@@ -229,3 +51,349 @@
   display: inline-block;
   margin: 0;
 }
+/*About component*/
+.abot-container-img {
+  position: relative;
+}
+.about-card {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  width: 200px;
+  color: white;
+  right: 0px;
+}
+/*Document components*/
+.document-body{
+  min-height:100vh;
+}
+.document-body img{
+  width:100%;
+}
+.document-submenu {
+  height: auto !important;
+  margin:0;
+  overflow-y: auto;
+  position: sticky;
+  top: 20px !important;
+}
+/*HowWorks component*/
+.howWork-icons {
+  margin: auto;
+}
+.howWork-number {
+  color: white;
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: -20px;
+  left: 40%;
+}
+.howWork-step {
+  padding: 10px;
+  border-radius: 50%;
+  border: solid #ccc;
+  height: 185px;
+  width: 185px;
+  position: relative;
+  transition: background 0.2s ease-in-out;
+}
+
+.howWork-col:hover .howWork-step {
+  background: #252525;
+}
+/*Sevices component*/
+
+.services-title {
+  font-size: 3.75rem !important;
+  font-weight: 300;
+  line-height: 3.75rem;
+  letter-spacing: -0.0083333333em !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.services-card {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.services-card-title {
+  display: block;
+}
+.services-card-action-div {
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.services-card-body {
+  transition: background 0.3s ease-in-out;
+}
+.services-card-col :hover .services-card-body {
+  display: grid;
+  place-items: center;
+  background-color: #424242;
+  color: white;
+}
+.services-card-col :hover .services-card-text {
+  color: white;
+}
+.services-card-col :hover .services-card-actions {
+  color: white;
+}
+.services-card-actions {
+  color: red;
+}
+.services-card-col :hover .services-icon {
+  transform: scale(1.1);
+}
+.services-card-col :hover .services-card-icon i {
+  transform: scale(1.1);
+}
+.services-icon :before {
+  position: absolute;
+  top: 74px;
+  height: 80px;
+  width: 1px;
+  content: '';
+  background-color: #e8eaed;
+}
+.services-icon {
+  position: relative;
+  top: 0;
+  transition: transform 0.5s ease-in-out;
+}
+.services-card-icon i {
+  position: relative;
+  top: -100px;
+  left: 25px;
+  transition: transform 0.5s ease-in-out;
+}
+.services-icon :after {
+  position: absolute;
+  content: ' ';
+  bottom: -50px;
+  left: 48%;
+  margin-left: -5px;
+  height: 12px;
+  width: 12px;
+  z-index: 1;
+  border-radius: 50px;
+  background-color: #e8eaed;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.services-card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+/*Slider component*/
+
+.slide {
+  color: #272727;
+}
+.slide-banner {
+  position: relative;
+  top: -70px;
+}
+
+.slider-text {
+  text-shadow: 0.5px 0.5px 3px #ffffff8a;
+  font-weight: bolder;
+}
+
+.slider-title {
+  text-shadow: 0.5px 0.5px 3px #ffffff8a;
+}
+
+/*MoreServices component*/
+
+.moreServices-background {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.moreServices-backdrop {
+  height: 100%;
+  widht: 100%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #2623237a;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+/*News component*/
+.news-background {
+  background: #1a5691;
+}
+.news-magnify {
+  display: grid;
+  place-items: center;
+}
+
+.news-backdrop {
+  min-height: 209px;
+  color: white;
+  background: rgb(37, 41, 61);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 41, 61, 0.5186449579831933) 0%,
+    rgba(37, 41, 61, 1) 100%
+  );
+  backdrop-filter: blur(7px);
+}
+
+/*OurTeam component*/
+.ourTeam-card {
+  overflow: hidden;
+  display: grid !important;
+  place-items: center;
+  padding: 0 10px 0 10px;
+}
+.ourTeam-card :hover .ourTeam-social {
+  transform: translateY(0px);
+  filter: opacity(1);
+}
+
+.ourTeam-card :hover .ourTeam-title {
+  border: solid #252525;
+  border-width: 0 0 10px 0;
+}
+
+.ourTeam-social {
+  position: relative;
+  float: left;
+  display: grid;
+  overflow: hidden;
+  transform: translateY(-10px);
+  filter: opacity(0);
+  transition: transform 0.5s ease-in-out, filter 0.9s ease-in-out;
+}
+.ourTeam-title {
+  width: 277px;
+  height: 80px;
+  position: relative;
+  top: -20px;
+  background: white;
+  display: grid;
+  place-items: center;
+  transition: border 0.3s ease-in-out;
+  margin: auto;
+}
+/*Whysoluprime component*/
+.whySoluprime-background {
+  height: 80vh;
+  width: 90vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.whySoluprime-body {
+  height: 600px;
+  color: white;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 720px;
+  overflow: scroll;
+}
+.whySoluprime-body-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+/*Banner*/
+.banner-background {
+  height: 300px;
+  background-size: cover;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.banner-body {
+  backdrop-filter: blur(2px);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+/*Break point page*/
+@media screen and (max-width: 600px) {
+  .howWork-icons {
+    display: none;
+  }
+  .howWork-step {
+    margin: 0 auto 130px auto;
+  }
+  .whySoluprime-background {
+    height: 140px !important;
+  }
+}
+@media screen and (max-width: 749px) {
+  .slider-banner-title {
+    font-size: 0rem;
+  }
+  .whySoluprime-body {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .whySoluprime-background {
+    height: 230px;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-size: 100% !important;
+  }
+  .whySoluprime-body-content p {
+    margin: 0 !important;
+  }
+  .whySoluprime-background-col {
+    padding: 0;
+    margin: 0;
+  }
+  .services-title {
+    font-size: 3rem !important;
+  }
+  .moreServices-body {
+    padding: 0 15px 0 15px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .page-services-img {
+    width: 300px !important;
+    height: 350px !important;
+  }
+  .document-submenu{
+    width:auto !important;
+    margin:auto;
+    margin-right:20px;
+    margin-left:20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about-img {
+    width: 300px;
+  }
+}
+/*corousel*/
+/* the parent */
+.slick-list {
+  margin: 0 -27px;
+}
+
+

@@ -1,5 +1,5 @@
 <template>
-  <v-content fluid="true"
+  <div
     class="section moreServices-background"
     :style="`background: url(${require('~/assets/img/img11.jpg')})
     no-repeat center center fixed;`"
@@ -8,7 +8,7 @@
     <div
     class="moreServices-backdrop"
     >
-    <div>
+    <div class="moreServices-body">
       <v-btn color="primary" fab x-large dark>
         <v-icon>mdi-play</v-icon>
       </v-btn>
@@ -21,5 +21,5 @@
       <v-btn color="white" outlined>More services</v-btn>
       </div>
     </div>
-  </v-content>
+  </div>
 </template>
